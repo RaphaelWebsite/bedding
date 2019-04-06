@@ -229,35 +229,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", "Georgia", Serif;}
   
 
   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-  //show
-  
-  
-$("#oskbtn").click(function () {
-    $("#oskPage").show();
-    $("#otsuPage").hide();
-    $("#jpPage").hide();
-      
-  }); 
-    
-$("#otsubtn").click(function () {
-   $("#oskPage").hide();
-    $("#otsuPage").show();
-    $("#jpPage").hide();
-      
-  }); 
-    
-    
-  
-$("#jpbtn").click(function () {
-   $("#oskPage").hide();
-    $("#otsuPage").hide();
-    $("#jpPage").show();
-  }); 
-    
-    
-
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 
@@ -291,7 +263,29 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
-}        
+} 
+
+$("#oskbtn").click(function () {
+    $("#oskPage").show();
+    $("#otsuPage").hide();
+    $("#jpPage").hide();
+      
+  }); 
+    
+$("#otsubtn").click(function () {
+   $("#oskPage").hide();
+    $("#otsuPage").show();
+    $("#jpPage").hide();
+      
+  }); 
+    
+    
+  
+$("#jpbtn").click(function () {
+   $("#oskPage").hide();
+    $("#otsuPage").hide();
+    $("#jpPage").show();
+  });   
 </script>
 
 </body>
