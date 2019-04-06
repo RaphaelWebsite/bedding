@@ -226,13 +226,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", "Georgia", Serif;}
 </div>
   
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
 <script>
   //show
   
   
 $("#oskbtn").click(function () {
-    $("#oskPage").show();
+    $("#oskPage").display.show();
     $("#otsuPage").hide();
     $("#jpPage").hide();
       
@@ -240,7 +242,7 @@ $("#oskbtn").click(function () {
     
 $("#otsubtn").click(function () {
    $("#oskPage").hide();
-    $("#otsuPage").show();
+    $("#otsuPage").display.show();
     $("#jpPage").hide();
       
   }); 
@@ -250,7 +252,7 @@ $("#otsubtn").click(function () {
 $("#jpbtn").click(function () {
    $("#oskPage").hide();
     $("#otsuPage").hide();
-    $("#jpPage").show();
+    $("#jpPage").display.show();
   }); 
     
     
