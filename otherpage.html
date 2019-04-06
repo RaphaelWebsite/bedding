@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Raphael(被/毯/枕)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", "Georgia", Serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 150px;
+  top: 55px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="file:///Users/apple/Desktop/bedding/index.html" class="w3-bar-item w3-button">Raphael拉斐爾寢具</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+     <a href="file:///Users/apple/Desktop/bedding/silkflowerpage.html" class="w3-bar-item w3-button">緹花</a>
+     <a href="file:///Users/apple/Desktop/bedding/cottonpage.html" class="w3-bar-item w3-button">純棉</a>
+     <a href="file:///Users/apple/Desktop/bedding/tencelpage.html" class="w3-bar-item w3-button">天絲</a>
+     <a href="file:///Users/apple/Desktop/bedding/japanpage.html" class="w3-bar-item w3-button">大阪西川/日本大津</a>
+    <a href="file:///Users/apple/Desktop/bedding/otherpage.html" class="w3-bar-item w3-button">被/毯/枕</a>
+     <a href="#contact" class="w3-bar-item w3-button">聯絡我們</a>
+  </div>
+    </div>
+    </div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a class="w3-bar-item w3-button w3-hover-black" id="quiltbtn">被類</a>
+  <a class="w3-bar-item w3-button w3-hover-black" id="blanketbtn">毯類</a>
+  <a class="w3-bar-item w3-button w3-hover-black" id="pillowbtn">枕類</a>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:190px">
+ <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+ <div class="w3-content"  id="quiltPage"> 
+  <div class="w3-main w3-content w3-padding w3-light-grey" style="max-width:1000px;margin-top:80px">
+  <h3>被類</h3>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="Sevenpage1">
+    <div class="w3-quarter">
+      <img src="other/quilt/quilt-9802-600x900.jpg" style="width:100%"  onclick="onClick(this)" alt="">
+      <h6></h6>
+      
+    </div>
+   <div class="w3-quarter">
+      <img src="other/quilt/quilt9505-600x900.jpg" alt="" style="width:100%" onclick="onClick(this)">
+      <h6></h6>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="other/quilt/puresilk600x900.jpg"  style="width:100%" onclick="onClick(this)" alt="">
+      <h6></h6>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="other/quilt/100_silk_summer600x900.jpg" alt="蠶絲夏被" style="width:100%" onclick="onClick(this)">
+     <h6>蠶絲夏被</h6>
+     
+    </div>
+    
+    
+  </div>
+  
+</div>
+    
+   
+    
+    <hr>
+ <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a  class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a  class="w3-bar-item w3-black w3-button" id="sevenbtn1">1</a>  
+      <a  class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+ 
+</div>
+
+
+<div class="w3-content" style="display:none;" id="blanketPage">   
+ 
+  <div class="w3-main w3-content w3-padding w3-light-grey" style="max-width:1000px;margin-top:80px">
+  <h3>毯類</h3>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="Fourpage1">
+    <div class="w3-quarter">
+      <img src="other/blanket/arli1.jpg" style="width:100%" onclick="onClick(this)" alt="雅麗" >
+      <h6>雅麗</h6>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="other/blanket/rattan1.jpg" style="width:100%" onclick="onClick(this)" alt="紫藤">
+      <h6>紫藤</h6>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="other/blanket/romantic1.jpg" style="width:100%" onclick="onClick(this)" alt="浪漫情懷" >
+      <h6>浪漫情懷</h6>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="other/blanket/gula1.jpg" style="width:100%" onclick="onClick(this)" alt="古拉" >
+      <h6>古拉</h6>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="other/blanket/hsia1.jpg" style="width:100%" onclick="onClick(this)" alt="夏奇亞">
+      <h6>夏奇亞</h6>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="other/blanket/lan1.jpg" style="width:100%" onclick="onClick(this)" alt="郁蘭香">
+      <h6>郁蘭香</h6>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="other/blanket/hdo1.jpg" style="width:100%" onclick="onClick(this)" alt="花都">
+      <h6>花都</h6>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="other/blanket/young1.jpg" style="width:100%" onclick="onClick(this)" alt="青春旋律">
+      <h6>青春旋律</h6>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="other/blanket/rabbit1.jpg" style="width:100%" onclick="onClick(this)" alt="兔子朋友" >
+      <h6>兔子朋友</h6>
+      
+    </div>
+   
+   
+    
+   
+  </div>
+  
+
+   
+   
+
+</div>
+   
+   
+    
+    <hr>
+ <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a  class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a  class="w3-bar-item w3-black w3-button" id="fourbtn1">1</a>          
+      <a  class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+ 
+</div>
+
+
+<div class="w3-content" style="display:none;" id="pillowPage">   
+ 
+  <div class="w3-main w3-content w3-padding w3-light-grey" style="max-width:1000px;margin-top:80px">
+  <h3>枕類</h3>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="Fourpage1">
+   
+   
+    <div class="w3-quarter">
+      <img src="other/pillow/1.jpg" alt="羽絲絨枕" style="width:100%" onclick="onClick(this)" >
+      <h6>羽絲絨枕</h6>
+     
+    </div>
+   
+  </div>
+  
+
+   
+   
+
+</div>
+   
+   
+   
+    
+    <hr>
+ <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a  class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a  class="w3-bar-item w3-black w3-button" id="fourbtn1">1</a>          
+      <a  class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+ 
+</div>
+  
+<!-- END MAIN -->
+</div>
+
+
+
+
+ <div class="w3-content" style="margin-left:190px">
+  <div class="w3-container w3-padding-64" id="contact">
+    <h3>Contact-全台櫃點</h3><br>
+      <i class="fa fa-map-marker fa-fw w3-hover-text-grey w3-xlarge w3-margin-right "></i><b class="w3-text-blue-grey w3-large">台北寶慶遠東 6F</b>
+      <i class="fa fa-map-marker fa-fw w3-hover-text-grey w3-xlarge w3-margin-right "></i><b class="w3-text-blue-grey w3-large">台北明曜百貨 7F</b>
+      <i class="fa fa-map-marker fa-fw w3-hover-text-grey w3-xlarge w3-margin-right "></i><b class="w3-text-blue-grey w3-large">新竹SOGO站前店 10F</b>
+      <i class="fa fa-map-marker fa-fw w3-hover-text-grey w3-xlarge w3-margin-right "></i><b class="w3-text-blue-grey w3-large">新竹Big City 6F</b>
+      <i class="fa fa-map-marker fa-fw w3-hover-text-grey w3-xlarge w3-margin-right "></i><b class="w3-text-blue-grey w3-large">高雄大統百貨和平店 9F</b><br>
+    
+    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b class="w3-text-grey w3-large">You can also contact us by email gwannshing@gmail.com</b>
+    
+  </div>
+</div>
+  
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<script>
+  //show
+  
+  
+$("#quiltbtn").click(function () {
+    $("#quiltPage").show();
+    $("#blanketPage").hide();
+    $("#pillowPage").hide();
+      
+  }); 
+    
+$("#blanketbtn").click(function () {
+   $("#quiltPage").hide();
+    $("#blanketPage").show();
+    $("#pillowPage").hide();
+      
+  }); 
+    
+    
+  
+$("#pillowbtn").click(function () {
+    $("#quiltPage").hide();
+    $("#blanketPage").hide();
+    $("#pillowPage").show();
+  }); 
+    
+    
+
+</script>
+
+
+
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+    
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}     
+
+
+    
+     
+</script>
+
+</body>
+</html>
+
