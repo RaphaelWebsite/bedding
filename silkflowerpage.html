@@ -210,33 +210,7 @@
   //show
   
   
-$("#sevenbtn1").click(function () {
-    $("#Sevenpage1").display.show();
-    $("#Sevenpage2").hide();
-      
-  });
-  
-$("#sevenbtn").click(function () {
-    $("#SevenPage").display.show();
-    $("#FourPage").hide();
-      
-  }); 
-    
-    
-    
-    
-$("#fourbtn1").click(function () {
-    $("#Fourpage1").display.show();
-    $("#Fourpage2").hide();
-      
-  });
-    
-  
-$("#fourbtn").click(function () {
-    $("#SevenPage").hide();
-    $("#FourPage").display.show();
-      
-  }); 
+
 
 </script>
 
@@ -273,7 +247,35 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
-}     
+}  
+
+$("#sevenbtn1").click(function () {
+    $("#Sevenpage1").show();
+    $("#Sevenpage2").hide();
+      
+  });
+  
+$("#sevenbtn").click(function () {
+    $("#SevenPage").show();
+    $("#FourPage").hide();
+      
+  }); 
+    
+    
+    
+    
+$("#fourbtn1").click(function () {
+    $("#Fourpage1").show();
+    $("#Fourpage2").hide();
+      
+  });
+    
+  
+$("#fourbtn").click(function () {
+    $("#SevenPage").hide();
+    $("#FourPage").show();
+      
+  });     
     
 </script>
 
